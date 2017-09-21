@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vtkrishn/leetcode-helper.svg?branch=master)](https://travis-ci.org/vtkrishn/leetcode-helper)
+
 Leetcode Helper
 
 #Number Returner
