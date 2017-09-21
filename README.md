@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vtkrishn/leetcode-helper.svg?branch=master)](https://travis-ci.org/vtkrishn/leetcode-helper)
+[![Build Status](https://travis-ci.org/vtkrishn/leetcode-helper.svg?branch=master)](https://travis-ci.org/vtkrishn/leetcode-helper) [![Coverage Status](https://coveralls.io/repos/github/vtkrishn/leetcode-helper/badge.svg?branch=master)](https://coveralls.io/github/vtkrishn/leetcode-helper?branch=master)
 
 Leetcode Helper
 
