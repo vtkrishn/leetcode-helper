@@ -1,6 +1,6 @@
 {
   "name": "leetcode-helper",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Leetcode Helper",
   "engines": {
     "node": ">=4.2.4"
