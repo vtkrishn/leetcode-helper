@@ -7,8 +7,7 @@ var helper = require('../index');
           //test mirror function
           it('should return a random number', function() {
               var result = helper.random(1,10);
-              expect(result).to.above(1);
-              expect(result).to.below(10);
+              expect(result).to.be.within(1,10);
           });
       });
       describe('#leetcode-helper.iteration', function() {
