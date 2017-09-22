@@ -2,7 +2,7 @@
 
 [![NPM](https://nodei.co/npm/leetcode-helper.png)](https://nodei.co/npm/leetcode-helper/)
 
-#Leetcode Helper
+# Leetcode Helper
 
 This is a small utilty just to get hand's on the npm package publishing and working with travis, coverall, mocha, chai
 
