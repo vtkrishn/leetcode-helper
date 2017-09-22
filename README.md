@@ -2,26 +2,22 @@
 
 Leetcode Helper
 
-#Number Returner
-----------------
-
 This is a small utilty just to get hand's on the npm package publishing and working with travis, coverall, mocha, chai
 
 ## Installation
 
   `npm install leetcode-helper`
 
-## Usage
+## Usage - min/max
 
-    var numReturner = require('leetcode-helper');
+    var helper = require('leetcode-helper');
+    var num = helper.min([1,2,3,4,5]);
+    Output should be 1
 
-    var num = numReturner(35666);
-  
-  
-  Output should be 35666
-
+    var helper = require('leetcode-helper');
+    var num = helper.max([1,2,3,4,5]);
+    Output should be 5
 
 ## Tests
 
   `npm test`
-

@@ -1,11 +1,16 @@
 'use strict';
 
 var expect = require('chai').expect;
-var numberReturner = require('../index');
+var helper = require('../index');
 
-    describe('#numberReturner', function() {
-    it('should return the passed number back', function() {
-        var result = numberReturner(1);
+    describe('#leetcode-helper', function() {
+    it('should return the mimimum number', function() {
+        var result = helper.min([1,2,3,4,5]);
         expect(result).to.equal(1);
+    });
+
+    it('should return the maximum number', function() {
+        var result = helper.max([1,2,3,4,5]);
+        expect(result).to.equal(5);
     });
 });
