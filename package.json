@@ -1,6 +1,6 @@
 {
   "name": "leetcode-helper",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Leetcode Helper",
   "engines": {
     "node": ">=4.2.4"
@@ -15,8 +15,8 @@
     "test": "node_modules/.bin/mocha --reporter spec",
     "cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/vtkrishn/leetcode-helper.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vtkrishn/leetcode-helper.git"
   }
 }
