@@ -4,7 +4,35 @@
 //     return number;
 // };
 
-var exports = {
+var helper = {
+    mirror : function(item){
+      console.log(item);
+      return item;
+    },
+    node : function(value){
+        this.val = value;
+        this.next = null;
+      },
+      print : function(node){
+          if(node instanceof this.node){
+           while(node !== null){
+            console.log(node.val);
+            node = node.next;
+           }
+          }
+          else if(node instanceof Array){
+            node.forEach(this.mirror);
+          }
+          else if(node instanceof Object){
+            console.log(Object.keys(node).map(
+              function(key){
+                return node[key]
+              }));
+          }
+          else{
+            console.log(node);
+          }
+      },
     max : function(nums){
          var m = Number.MIN_VALUE;
          if(nums.length === 0)
@@ -21,6 +49,11 @@ var exports = {
            m = Math.min(m,nums[i]);
          return m;
     },
+    random : function(min, max){
+      var random = Math.random();
+      return Math.floor(random * (min - max + 1) + min)
+    }
+    ,
     stack : {
       arr : [],
       size : 0,
@@ -60,4 +93,4 @@ var exports = {
       }
     }
 }
-module.exports = exports;
+module.exports = helper;

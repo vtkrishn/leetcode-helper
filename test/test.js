@@ -3,6 +3,38 @@
 var expect = require('chai').expect;
 var helper = require('../index');
 
+      describe('#leetcode-helper.iteration', function() {
+          //test mirror function
+          it('should return watever passed', function() {
+              var result = helper.mirror(123);
+              expect(result).to.equal(123);
+          });
+      });
+      describe('#leetcode-helper.node', function() {
+          //test Node object
+          it('create a new node', function() {
+              var result = new helper.node(123);
+              expect(result).to.not.be.null;
+          });
+      });
+
+      describe('#leetcode-helper.print', function() {
+          //test Node object
+          it('print node', function() {
+              var node = new helper.node(123);
+              helper.print(node);
+          });
+          it('print Array', function() {
+              helper.print([1,2,3,4]);
+          });
+          it('print Object', function() {
+              helper.print({one: 1, two : 2});
+          });
+          it('print anything', function() {
+              helper.print("something");
+          });
+      });
+
     describe('#leetcode-helper.min', function() {
         //test min function
         it('should return the mimimum number', function() {
