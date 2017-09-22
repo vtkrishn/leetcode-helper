@@ -17,11 +17,16 @@ This is a small utilty just to get hand's on the npm package publishing and work
 ### Functions supported
 * min()
 * max()
-* stack
+* stack (object)
   * pop()
   * push()
   * empty()
   * peek()
+* queue (object)
+    * enque()
+    * deque()
+    * empty()
+    * peek()  
 
 ## Tests
 

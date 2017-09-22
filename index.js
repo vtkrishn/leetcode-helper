@@ -7,12 +7,16 @@
 var exports = {
     max : function(nums){
          var m = Number.MIN_VALUE;
+         if(nums.length === 0)
+          return undefined;
          for(var i=0;i<nums.length;i++)
            m = Math.max(m,nums[i]);
          return m;
     },
     min : function(nums){
          var m = Number.MAX_VALUE;
+         if(nums.length === 0)
+          return undefined;
          for(var i=0;i<nums.length;i++)
            m = Math.min(m,nums[i]);
          return m;
@@ -25,6 +29,25 @@ var exports = {
         this.size++;
       },
       pop : function(){
+        this.arr.shift();
+        if(this.size > 0)
+          this.size--;
+      },
+      peek : function(){
+        return this.arr[0];
+      },
+      empty : function(){
+        return (this.size === 0);
+      }
+    },
+    queue : {
+      arr : [],
+      size : 0,
+      enque : function(value){
+        this.arr.push(value);
+        this.size++;
+      },
+      deque : function(){
         this.arr.shift();
         if(this.size > 0)
           this.size--;

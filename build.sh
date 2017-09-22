@@ -1,9 +1,12 @@
+#! /bin/sh
+
+parameter=$1
 git pull
 npm test
 npm run cover
-npm version patch -m "Version %s - %1"
+npm version patch -m "Version %s - $parameter"
 
 git add .
-git commit -m "%1"
+git commit -m "$parameter"
 git push && git push --tags
 npm publish
