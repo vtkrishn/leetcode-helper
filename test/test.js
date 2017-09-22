@@ -3,6 +3,14 @@
 var expect = require('chai').expect;
 var helper = require('../index');
 
+      describe('#leetcode-helper.random', function() {
+          //test mirror function
+          it('should return a random number', function() {
+              var result = helper.random(1,10);
+              expect(result).to.above(1);
+              expect(result).to.below(10);
+          });
+      });
       describe('#leetcode-helper.iteration', function() {
           //test mirror function
           it('should return watever passed', function() {

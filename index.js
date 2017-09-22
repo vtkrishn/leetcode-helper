@@ -51,7 +51,7 @@ var helper = {
     },
     random : function(min, max){
       var random = Math.random();
-      return Math.floor(random * (min - max + 1) + min)
+      return Math.floor(random * (max - min + 1) + min)
     }
     ,
     stack : {

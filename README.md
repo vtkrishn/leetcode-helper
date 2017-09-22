@@ -27,6 +27,9 @@ This is a small utilty just to get hand's on the npm package publishing and work
     * deque()
     * empty()
     * peek()  
+* node()
+* print()
+* random()
 
 ## Tests
 
