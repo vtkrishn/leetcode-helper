@@ -30,6 +30,7 @@ This is a small utilty just to get hand's on the npm package publishing and work
 * node()
 * print()
 * random()
+* removeArrayElement()
 
 ## Tests
 
