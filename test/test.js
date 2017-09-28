@@ -3,6 +3,34 @@
 var expect = require('chai').expect;
 var helper = require('../index');
 
+
+      describe('#leetcode-helper.removeArrayElement', function() {
+          //test mirror function
+          it('should return an array without the element', function() {
+              var arr = [1,2,3,4,5,6,7,8,9,10];
+              var result = helper.removeArrayElement(arr,1);
+              expect(result[0]).to.equal(2);
+              expect(result.length).to.equal(arr.length-1);
+          });
+          it('should return an array without the last element', function() {
+              var arr = [4,5,6,7,8,9,10];
+              var result = helper.removeArrayElement(arr,10);
+              expect(result[result.length-1]).to.equal(9);
+              expect(result.length).to.equal(arr.length-1);
+          });
+          it('should return an empty array', function() {
+              var arr = [4];
+              var result = helper.removeArrayElement(arr,4);
+              expect(result.length).to.equal(0);
+              expect(result.length).to.equal(arr.length-1);
+          });
+          it('should return same array if the element is not there', function() {
+              var arr = [4,7,5,6];
+              var result = helper.removeArrayElement(arr,1);
+              expect(result.length).to.equal(4);
+              expect(result.length).to.equal(arr.length);
+          });
+      });
       describe('#leetcode-helper.random', function() {
           //test mirror function
           it('should return a random number', function() {
@@ -10,7 +38,7 @@ var helper = require('../index');
               expect(result).to.be.within(1,10);
           });
       });
-      describe('#leetcode-helper.iteration', function() {
+      describe('#leetcode-helper.mirror', function() {
           //test mirror function
           it('should return watever passed', function() {
               var result = helper.mirror(123);

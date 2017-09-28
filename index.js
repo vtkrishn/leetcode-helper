@@ -5,6 +5,12 @@
 // };
 
 var helper = {
+
+  removeArrayElement : function(arr, item){
+    return arr.filter(function(i){
+      return i != item;
+    });
+  },
     mirror : function(item){
       console.log(item);
       return item;
