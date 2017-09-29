@@ -97,6 +97,51 @@ var helper = {
       empty : function(){
         return (this.size === 0);
       }
+    },
+    createTree : function(treeString){
+
+        var createTreeNode = function(value){
+            var TreeNode = function(value) {
+             this.left = null;
+             this.right = null;
+             this.val = value;
+            };
+            return new TreeNode(value);
+        };
+
+    var treeStringSplit = treeString.split(',');
+    var root = createTreeNode(parseInt(treeStringSplit[0]));
+    var q = [];
+    q.push(root);
+    var i = 1;
+    while(q.length > 0){
+      var node = q.shift();
+      if(node === null)
+        continue;
+
+      if(parseInt(treeStringSplit[i]) !== null){
+        node.left = createTreeNode(parseInt(treeStringSplit[i]));
+        q.push(node.left);
+      }
+      else{
+        node.left = null;
+        q.push(null);
+      }
+
+      i++;
+
+      if(parseInt(treeStringSplit[i]) !== null){
+        node.right = createTreeNode(parseInt(treeStringSplit[i]));
+        q.push(node.right);
+      }
+      else{
+        node.right = null;
+        q.push(null);
+      }
+      i++;
     }
+
+    return root;
+  }
 }
 module.exports = helper;
