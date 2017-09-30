@@ -114,12 +114,12 @@ var helper = {
     var q = [];
     q.push(root);
     var i = 1;
-    while(q.length > 0){
+    while(q.length > 0 && i < treeStringSplit.length){
       var node = q.shift();
       if(node === null)
         continue;
 
-      if(parseInt(treeStringSplit[i]) !== null){
+      if(i < treeStringSplit.length && parseInt(treeStringSplit[i]) !== null){
         node.left = createTreeNode(parseInt(treeStringSplit[i]));
         q.push(node.left);
       }
@@ -130,7 +130,7 @@ var helper = {
 
       i++;
 
-      if(parseInt(treeStringSplit[i]) !== null){
+      if(i < treeStringSplit.length && parseInt(treeStringSplit[i]) !== null){
         node.right = createTreeNode(parseInt(treeStringSplit[i]));
         q.push(node.right);
       }

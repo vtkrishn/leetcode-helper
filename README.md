@@ -31,6 +31,7 @@ This is a small utilty just to get hand's on the npm package publishing and work
 * print()
 * random()
 * removeArrayElement()
+* createTree(string)
 
 ## Tests
 

@@ -5,18 +5,18 @@ var helper = require('../index');
 
       describe('#leetcode-helper.createTree', function() {
           //test createTree function
-          // it('should create a tree for the structure', function() {
-          //     var result = helper.createTree("1,2,3");
-          //     expect(result.val).to.equal(1);
-          //     expect(result.left.val).to.equal(2);
-          //     expect(result.right.val).to.equal(2);
-          // });
-          // it('should create a tree for the structure', function() {
-          //     var result = helper.createTree("1,#");
-          //     expect(result.val).to.equal(1);
-          //     expect(result.left.val).to.equal(null);
-          //     expect(result.right.val).to.equal(null);
-          // });
+          it('should create a tree for the structure', function() {
+              var result = helper.createTree("1,2,3");
+              expect(result.val).to.equal(1);
+              expect(result.left.val).to.equal(2);
+              expect(result.right.val).to.equal(3);
+          });
+          it('should create only one node', function() {
+              var result = helper.createTree("1");
+              expect(result.val).to.equal(1);
+              expect(result.left).to.equal(null);
+              expect(result.right).to.equal(null);
+          });
       });
       describe('#leetcode-helper.removeArrayElement', function() {
           //test mirror function
